@@ -1,0 +1,6 @@
+{
+  "name": "রাষ্ট্রের তিন আয়না — eBook & Audiobook",
+  "description": "রাষ্ট্রের তিন আয়না (Three Mirrors of the State): নাগরিকের অপেক্ষা, মাঠের নথি আর ক্ষমতার সমীকরণ — সম্পূর্ণ ইন্টারঅ্যাক্টিভ ই-বুক ও অডিওবুক রিডার।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

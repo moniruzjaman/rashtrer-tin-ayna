@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-siliguri: 'Hind Siliguri', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-serif-bengali: 'Noto Serif Bengali', Georgia, serif;
+    --font-tiro: 'Tiro Bangla', serif;
+  }
+
+  body {
+    font-family: 'Hind Siliguri', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+.font-siliguri {
+  font-family: 'Hind Siliguri', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-bengali-serif {
+  font-family: 'Noto Serif Bengali', Georgia, serif;
+}
+
+.font-tiro {
+  font-family: 'Tiro Bangla', serif;
+}
+
+/* Reader paper texture subtly simulated */
+.paper-texture {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.dark-texture {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Smooth transitions for theme switching */
+.theme-transition {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(180, 150, 120, 0.28);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(180, 150, 120, 0.48);
+}
+
+/* Print stylesheet for downloading / printing complete eBook */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body, .print-container {
+    background: white !important;
+    color: #1a1a1a !important;
+  }
+  .print-page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+}
